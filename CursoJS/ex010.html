@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em site</title>
+</head>
+<body>
+    <h1>Sistema de Multas DETRAN-BA</h1>
+    <p>Digite a sua velocidade atual na via?</p>
+    Velocidade do carro: <input type="number" name="vel1tx" id="vel1tx"> km/h
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="vel">Velocidade atual: </div>
+    <script>
+        function verif() {
+            var vel1 = window.document.getElementById('vel1tx')
+            var vel = window.document.getElementById('vel')
+            var numvel1 = Number(vel1.value)
+            vel.innerHTML = `<p>Sua velocidade atual é de: <strong>${numvel1} km/h</strong></p>`
+            if (numvel1 > 60) {
+                vel.innerHTML += `<p>Você esta <strong>MULTADO!!!</strong> por ecesso de velocidade!</p>`
+            }
+            vel.innerHTML += `<p>Dirija sempre com o sinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

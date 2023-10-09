@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições 02</title>
+</head>
+<body>
+    <h1>Controle Migratório</h1>
+    <h2>Qual o seu país de origem?</h2>
+    <input type="text" name="ipais" id="ipais">
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res">
+        Resultado: 
+    </div>
+    <script>
+        function verif() {
+            var pais = window.document.getElementById('ipais')
+            var res = window.document.querySelector('div#res')
+            var rpais = (pais.value)
+            res.innerHTML = `<p>O seu país de origem é: <strong>${rpais}</strong>!</P>`
+                if (rpais == 'Brasil') {
+                    res.innerHTML += `<p>Você é <strong>BRASILEIRO!!!</strong></P>`
+                } else {
+                    res.innerHTML += `<p>Você é <strong>ESTRANGEIRO!!!</strong></P>`
+                }
+            res.innerHTML += `<p>Seja bem vindos!!!</P>`    
+        }
+    </script>
+</body>
+</html>
