@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+   margin: 0;
+   padding: 0;  
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: deepskyblue;
+}
+header > h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin: 20px 0px;
+}
+section {
+    background-color: whitesmoke;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
+    overflow: hidden;
+}
+section > div#time {
+    display: block;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+section > div#foto {
+    display: block;
+    width: 600px;
+    height: 350px;
+    background-position: center center;
+}
+footer > p {
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}

@@ -1,5 +1,5 @@
-var agora = new Date()
-var hora = agora.setUTCHours
+var agora = new Date();
+var hora = agora.getHours();
 console.log(`Agora são: ${hora}H.`)
 if (hora < 12) {
     console.log('BOM DIA!')
