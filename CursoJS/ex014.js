@@ -1,5 +1,3 @@
-var cont = 1
-while (cont <= 10) {
-    console.log(cont)
-    cont++
+for (var cal = 1; cal <= 10; cal++) {
+    console.log(cal)
 }
