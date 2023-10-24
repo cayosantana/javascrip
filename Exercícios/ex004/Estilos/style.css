@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    background-color: lightgray;
+}
+header > h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+section {
+    background-color: whitesmoke;
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
+}
+form {
+    text-align: center;
+}
+.l1, .l2 {
+    margin-top: 15px;
+}
+input#botao {
+    width: 150px;  
+}
+div#res {
+    margin-top: 20px;
+}
+footer > p {
+    text-align: center;
+    margin: 20px 0;
+}
