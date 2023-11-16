@@ -1,6 +1,15 @@
-let n = 1 + "1"
-n = n - 1
-console.log(n)
-console.log(2 + 3 + 4 + "5")
-console.log("5" + 2 + 3 + 4)
-console.log("10" - "4" - "3" - 2 + "5")
+let val = 7
+let chu = 7
+
+if (val === chu) {
+    console.log(`PARABENS!!! - Voce acertou!`)
+} else {
+    if (val > chu) {
+        console.log(`ERROU! - Tente um número MAIOR`)  
+    } else {
+        console.log(`ERROU! - Tente um número MENOR`) 
+    } 
+}
+
+
+
