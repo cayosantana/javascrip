@@ -16,4 +16,6 @@ const todos = [
     },
 ]
 
-console.log(todos[2].description)
+const todosJSON = JSON.stringify(todos)
+const todosList = JSON.parse(todosJSON)
+console.log(todosList)
