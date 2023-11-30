@@ -3,6 +3,8 @@ const clicar = window.document.getElementById('botao')
 const nome = window.document.getElementById('iname')
 const email = window.document.getElementById('iemail')
 const itens = window.document.querySelector('.itens')
+const form = window.document.querySelector('#meuForm')
+const msg = window.document.querySelector('.msg')
 
 
 clicar.addEventListener("click", function(evento) { //Ao clicar no botao, gerar um evento
@@ -11,7 +13,7 @@ clicar.addEventListener("click", function(evento) { //Ao clicar no botao, gerar 
     const nomeValor = nome.value
     const emailValor = email.value
     if (nomeValor === '' || emailValor === '') {
-        window.alert('Por Favor, Preencha todos os campos!')
+        msg.textContent = 'Por favor, preencha todos os campos!'
         nome.style.backgroundColor = 'rgb(255, 154, 154)'
         email.style.backgroundColor = 'rgb(255, 154, 154)'
     } else {

@@ -41,6 +41,11 @@ div#formulario > form > div {
     flex-direction: column;
     gap: 5px;
 }
+.msg {
+    font-style: oblique;
+    color: red;
+    padding-bottom: 10px;
+}
 #iname, #iemail {
     height: 20px; 
 }
@@ -65,9 +70,10 @@ ul {
     list-style: none;
 }
 ul > li {
-    padding: 5px;
+    padding: 10px;
     background: #f4f4f4;
     margin: 5px 0px;
     border-radius: 6px;
     font-size: 0.9rem;
+
 }
