@@ -7,7 +7,6 @@ const form = window.document.querySelector('#meuForm')
 const msg = window.document.querySelector('.msg')
 const li = window.document.createElement('li')
 
-
 clicar.addEventListener("click", function(evento) { //Ao clicar no botao, gerar um evento
     evento.preventDefault()
     //tranformando os dados em valores
@@ -30,5 +29,4 @@ clicar.addEventListener("click", function(evento) { //Ao clicar no botao, gerar 
         nome.value = '' // apos os dados serem exibidos abaixo do formulário o campo será limpo!
         email.value = '' // apos os dados serem exibidos abaixo do formulário o campo será limpo!
     }
-    
 })
